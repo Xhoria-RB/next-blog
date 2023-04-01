@@ -4,10 +4,11 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import ReactPlayer from 'react-player'
+
 
 
 export default function Home({ allPostsData }) {
+ 
   return (
     <Layout home>
       <Head>
@@ -16,7 +17,14 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>The impact of Video Conferencing</p>
 
-        {/* <ReactPlayer url="/" controls /> */}
+        <iframe 
+        width="750" 
+        height="415" 
+        src="https://www.youtube.com/embed/uIhLtQJPfFA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen />
 
         <p>
           This is a presentation for my English classes about Video Conferencing and it's impact now a days.
